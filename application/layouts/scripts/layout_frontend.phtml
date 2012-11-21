@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC 
+	"-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/styles/css/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<div id="wrapper">
+		<div id="logo">
+		<?= $this->render('partials/logo.php') ?>
+			
+		</div>
+		<?= $this->render('partials/header.php') ?>
+		<div id="page">
+			<div id="content">
+			
+			<?=$this->layout()->content;?>
+			</div>
+			<!-- end #content -->
+			<div id="sidebar">
+			<?= $this->render('partials/sidebar.php') ?>
+				
+			</div>
+			<!-- end #sidebar -->
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<div id="footer">
+	<?= $this->render('partials/footer.php') ?>
+		
+	</div>
+</body>
+</html>

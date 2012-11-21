@@ -1,0 +1,18 @@
+<div id="generic_wrap" class="column span-16">
+    <div id="generic_group">    
+        <h2>Registro</h2>
+        <p>Ingrese la siguiente información.</p>
+        <?php if($this->failedValidation): ?>
+		    <p class="error">Ha ocurrido un error.</p>
+		<?php endif; ?>
+		<?php if($this->emailExist): ?>
+		    <p class="error">El usuario exsite en la base de datos. <a href="<?php echo $this->baseUrl();?>/author/recover/email/<?php echo $this->email ?>">[Recordar contraseña]</a>.</p>
+		<?php endif; ?>
+		
+		<?php if($this->entrySaved): ?>
+		    <p class="success">Te hemos enviado un email VERIFICAR la información.</p>
+		<?php else: ?>
+		    <?php echo $this->entryForm ?>
+		<?php endif; ?>
+    </div><!-- end #generic_group -->
+</div><!-- end #generic_wrap -->

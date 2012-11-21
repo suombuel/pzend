@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence"
+         adminlang="en-us" srclang="de-at" o-tmf="abc"
+         creationtool="XYZTool" >
+ </header>
+ <body>
+  <tu tuid='Add New Entry'>
+   <tuv xml:lang="en"><seg>Add New Entry</seg></tuv>
+   <tuv xml:lang="es"><seg>Agregar nueva entrada</seg></tuv>
+  </tu>
+  <tu tuid='Title'>
+   <tuv xml:lang="en"><seg>Title</seg></tuv>
+   <tuv xml:lang="es"><seg>Título</seg></tuv>
+  </tu>
+  <tu tuid='Author'>
+   <tuv xml:lang="en"><seg>Author</seg></tuv>
+   <tuv xml:lang="es"><seg>Autor</seg></tuv>
+  </tu>
+  <tu tuid='Body'>
+   <tuv xml:lang="en"><seg>Body</seg></tuv>
+   <tuv xml:lang="es"><seg>Cuerpo</seg></tuv>
+  </tu>
+  <tu tuid='Text'>
+   <tuv xml:lang="en"><seg>Text</seg></tuv>
+   <tuv xml:lang="es"><seg>Texto Largo</seg></tuv>
+  </tu>
+  <tu tuid='Image'>
+   <tuv xml:lang="en"><seg>Image</seg></tuv>
+   <tuv xml:lang="es"><seg>Imagen</seg></tuv>
+  </tu>
+  <tu tuid='Current image'>
+   <tuv xml:lang="en"><seg>Current image</seg></tuv>
+   <tuv xml:lang="es"><seg>Imagen actual</seg></tuv>
+  </tu>
+  <tu tuid='512kb size, jpg,png,gif'>
+   <tuv xml:lang="en"><seg>512kb size, jpg,png,gif</seg></tuv>
+   <tuv xml:lang="es"><seg>512kb, jpg,png,gif</seg></tuv>
+  </tu>
+ 
+  
+  <tu tuid='Date'>
+   <tuv xml:lang="en"><seg>Date</seg></tuv>
+   <tuv xml:lang="es"><seg>Fecha</seg></tuv>
+  </tu>
+  <tu tuid='Entries list'>
+   <tuv xml:lang="en"><seg>Entries list</seg></tuv>
+   <tuv xml:lang="es"><seg>Lista de entradas</seg></tuv>
+  </tu>
+  <tu tuid='Use this form to edit entry'>
+   <tuv xml:lang="en"><seg>Use this form to edit entry</seg></tuv>
+   <tuv xml:lang="es"><seg>Formulario para editar entrada</seg></tuv>
+  </tu>
+  <tu tuid='Edit Entry'>
+   <tuv xml:lang="en"><seg>Edit Entry</seg></tuv>
+   <tuv xml:lang="es"><seg>Editar Entrada</seg></tuv>
+  </tu>
+  <tu tuid='Delete Entry'>
+   <tuv xml:lang="en"><seg>Delete Entry</seg></tuv>
+   <tuv xml:lang="es"><seg>Borrar Entrada</seg></tuv>
+  </tu>
+  <tu tuid='by'>
+   <tuv xml:lang="en"><seg>by</seg></tuv>
+   <tuv xml:lang="es"><seg>por</seg></tuv>
+  </tu>
+  <tu tuid='Add Entry'>
+   <tuv xml:lang="en"><seg>Add Entry</seg></tuv>
+   <tuv xml:lang="es"><seg>Agregar Entrada</seg></tuv>
+  </tu>
+  <tu tuid='Use this form to add entry'>
+   <tuv xml:lang="en"><seg>Use this form to add entry</seg></tuv>
+   <tuv xml:lang="es"><seg>Formulario para agregar entradas</seg></tuv>
+  </tu>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </body>

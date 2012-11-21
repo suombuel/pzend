@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<nav>
+		<admin>
+			<label>Admin</label>
+			<module>admin</module>
+			<controller>index</controller> 
+            <action>index</action>
+            <resource>admin:index</resource>
+            <privilege>index</privilege>
+            <pages>
+				<list>
+					<label>List Resources</label>					
+					<module>admin</module>
+					<controller>index</controller> 
+               		<action>listresources</action>
+               		<resource>admin:index</resource>
+            		<privilege>listresources</privilege>
+				</list>
+				<check>
+					<label>Check Config</label>
+					<uri>/admin/index/checkconfig</uri>
+					<resource>admin:index</resource>
+            		<privilege>checkconfig</privilege>
+				</check>
+			</pages>
+		</admin>
+		
+		
+		<users>
+			<label>Users</label>
+			<uri>/users/users</uri>
+			<resource>users:users</resource>
+			<privilege>index</privilege>
+			<pages>
+				<listusers>
+					<label>Users</label>
+					<uri>/users/users/index</uri>
+					<resource>users:users</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Add User</label>
+							<uri>/users/users/add</uri>
+							<resource>users:users</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Edit User</label>
+							<uri>/users/users/edit</uri>
+							<resource>users:users</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Delete User</label>
+							<uri>/users/users/delete</uri>
+							<resource>users:users</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+		            	<password>
+							<label>Edit Password</label>
+							<uri>/users/users/editpassword</uri>
+							<resource>users:users</resource>
+		            		<privilege>editpassword</privilege>
+		            	</password>
+            		</pages>
+				</listusers>
+				<roles>
+					<label>Roles</label>
+					<uri>/users/roles/index</uri>
+					<resource>users:roles</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Add Role</label>
+							<uri>/users/roles/add</uri>
+							<resource>users:roles</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Edit Role</label>
+							<uri>/users/roles/edit</uri>
+							<resource>users:roles</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Delete Role</label>
+							<uri>/users/roles/delete</uri>
+							<resource>users:roles</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</roles>
+				<resources>
+					<label>Resources</label>
+					<uri>/users/resources/index</uri>
+					<resource>users:resources</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Add Resource</label>
+							<uri>/users/resources/add</uri>
+							<resource>users:resources</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Edit Resource</label>
+							<uri>/users/resources/edit</uri>
+							<resource>users:resources</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Delete Resource</label>
+							<uri>/users/resources/delete</uri>
+							<resource>users:resources</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</resources>
+				<permissions>
+					<label>Permissions</label>
+					<uri>/users/permissions/index</uri>
+					<resource>users:permissions</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Add Permission</label>
+							<uri>/users/permissions/add</uri>
+							<resource>users:permissions</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Edit Permission</label>
+							<uri>/users/permissions/edit</uri>
+							<resource>users:permissions</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Delete Permission</label>
+							<uri>/users/permissions/delete</uri>
+							<resource>users:permissions</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</permissions>
+				<modules>
+					<label>Modules</label>
+					<uri>/users/modules/index</uri>
+					<resource>users:modules</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Add Module</label>
+							<uri>/users/modules/add</uri>
+							<resource>users:modules</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Edit Module</label>
+							<uri>/users/modules/edit</uri>
+							<resource>users:modules</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Delete Module</label>
+							<uri>/users/modules/delete</uri>
+							<resource>users:modules</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</modules>
+				<list>
+					<label>List Resources</label>
+					<uri>/users/resources/listresources</uri>
+					<resource>users:resources</resource>
+            		<privilege>listresources</privilege>
+				</list>
+			</pages>
+		</users>
+		<mails>
+			<label>Mailing</label>
+			<module>mailer</module>
+			<controller>index</controller> 
+            <action>index</action>
+            <resource>mailer:index</resource>
+            <privilege>index</privilege>
+            <pages>
+				<list>
+					<label>Fill Db</label>					
+					<module>mailer</module>
+					<controller>index</controller> 
+               		<action>filldb</action>
+               		<resource>mailer:index</resource>
+            		<privilege>filldb</privilege>
+				</list>
+				
+			</pages>
+		</mails>
+		<staticcontent>
+			<label>Static Content</label>
+			<module>staticcontent</module>
+			<controller>index</controller> 
+            <action>index</action>
+            <resource>staticcontent:index</resource>
+            <privilege>index</privilege>
+            <pages>
+				<list>
+					<label>Static Content CMS</label>					
+					<module>staticcontent</module>
+					<controller>index</controller> 
+               		<action>index</action>
+               		<resource>staticcontent:index</resource>
+            		<privilege>index</privilege>
+				</list>
+				
+			</pages>
+		</staticcontent>
+	</nav>
+</config>

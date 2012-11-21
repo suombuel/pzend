@@ -1,0 +1,127 @@
+<?php echo $this->headLink()->setStylesheet($this->baseUrl('css/portfolio.css'), 'all')?>
+<?php echo $this->headLink()->setStylesheet($this->baseUrl('css/blog.css'), 'all')?>
+<?php echo $this->headLink()->setStylesheet($this->baseUrl('css/blog_details.css'), 'all')?>
+<?php echo $this->headLink()->setStylesheet($this->baseUrl('css/form.css'), 'all')?>
+<?php echo $this->headLink()->setStylesheet($this->baseUrl('css/dropdown.css'), 'all')?>
+
+<?php echo $this->headTitle($this->entry['title'], 'APPEND' ) ?>
+
+<div id="efectiv_content">
+    <div class="bottom">
+      <div class="container">
+        <div class="content">
+          <div class="portfolio_box">
+            <div class="portfolio_box_left">
+              <div class="blog_title">
+                <h2><?=$this->escape($this->entry['title']);?>
+                </h2>
+
+                <span class="date"><span><?php echo $this->escape($this->formatDbDate($this->entry['date'],'dd')) ?></span><?php echo $this->escape($this->formatDbDate($this->entry['date'],'MMM YY')) ?></span> </div>
+              <span class="img_blog"><img src="<?=$this->baseUrlImagesFrontend().$this->entry['image'];?>" alt="blog image" width="254px" height="234px" /></span>
+              <?=$this->entry['extended_body'];?>
+
+            </div>
+          </div>
+          <div class="portfolio_box_bottom"> 
+          	<?php /*
+          	<span><strong>Tags :</strong> <a href="#">Web Design</a>, <a href="#">Logo Design</a>, <a href="#">Corporate identity</a>, <a href="#">News</a>,<a href="#">Design</a>, <a href="#">Article</a></span> 
+          	<span><strong>Posted by</strong> <a href="#">John Smith</a> in <a href="#">Web Design Related</a></span> 
+          	<span><strong class="bookmarks">Bookmark :</strong> <a href="#" title=""><img src="images/blog_yahoo.jpg" alt="" width="15px" height="15px"/></a> <a href="#" title=""><img src="images/blog_delicio.jpg" alt="" width="15px" height="15px"/></a> <a href="#" title=""><img src="images/blog_3.jpg" alt="" width="15px" height="15px"/></a> <a href="#" title=""><img src="images/blog_4.jpg" alt="" width="15px" height="15px"/></a> <a href="#" title=""><img src="images/blog_5.jpg" alt="" width="15px" height="15px"/></a> <a href="#" title=""><img src="images/blog_6.jpg" alt="" width="15px" height="15px"/></a> <a href="#" title=""><img src="images/blog_7.jpg" alt="" width="15px" height="15px"/></a> <a href="#" title=""><img src="images/blog_8.jpg" alt="" width="15px" height="15px"/></a> <a href="#" title=""><img src="images/blog_9.jpg" alt="" width="15px" height="15px"/></a> <a href="#" title=""><img src="images/blog_10.jpg" alt="" width="15px" height="15px"/></a> <a href="#" title=""><img src="images/blog_11.jpg" alt="" width="15px" height="15px"/></a> </span>
+          	*/
+          	?>
+          	
+          	 <span>
+          	 	<strong>Posted by</strong> <a href="#"><?php echo $this->escape($this->entry['author']); ?></a> as 
+          	 	<a href=".<?php echo $this->entryUrl(array('id'=>$this->entry['id'],'title'=>$this->entry['title'])) ?>" class="permalink">Article</a>
+          	 </span>
+          </div>
+<?php /*
+          <div class="portfolio_box_noborder">
+            <div class="blog_title">
+              <h2>Comments <span>(<?php echo $this->escape($this->entry['comment_count']) ?> comments)</span></h2>
+              
+              <div class="more_detail"><a href=""><span><span>LEAVE A COMMENT</span></span></a></div>
+            </div>
+            <div class="comment">
+              <div class="user"> <span class="img_comment"><img src="images/blog_comment_img.jpg" alt="blog image" width="80px" height="80px" /></span> <a href="#" title="">Andrew Baine</a>on 14.08.2009 </div>
+
+              <div class="message_down">
+                <div class="message_up">
+                  <p>Phasellus auctor tellus sit amet nibh lacinia sed lobortis magna commodo. Nullam arcu justo, sagittis in iaculis eu, lobortis quis ante. Pellentesque eu egestas nulla. Etiam at enim at odio gravida vestibulum. Vivamus ut tempor risus. Morbi eu purus urna. Donec non mi nibh. Nunc et purus vitae augue consequat luctus a eu sem. Donec luctus euismod eros, ut auctor orci pretium nec.</p>
+                  <p>Pellentesque nec mattis mi. Integer eget diam ligula, tempor fermentum mi. Phasellus sed risus id tellus bibendum elementum. Sed sed turpis nunc, non laoreet justo. Mauris fermentum libero sit amet mi blandit in consequat felis gravida. Pellentesque erat tortor, venenatis vitae volutpat sit amet, tristique id velit. Aliquam nisi risus, laoreet ut gravida id, eleifend eu nisi. Maecenas varius, arcu sed cursus bibendum, turpis enim laoreet urna, sed sodales urna dolor ut arcu. Quisque dui mi, cursus at placerat sit amet, vestibulum eu nisi. Sed venenatis libero vel libero tincidunt id pulvinar ipsum</p>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+
+              <div class="user"> <span class="img_comment"><img src="images/blog_comment_img.jpg" alt="blog image" width="80px" height="80px" /></span> <a href="#" title="">Andrew Baine</a>on 14.08.2009 </div>
+              <div class="message_down">
+                <div class="message_up">
+                  <p>Phasellus auctor tellus sit amet nibh lacinia sed lobortis magna commodo. Nullam arcu justo, sagittis in iaculis eu, lobortis quis ante. Pellentesque eu egestas nulla. Etiam at enim at odio gravida vestibulum. Vivamus ut tempor risus. Morbi eu purus urna. Donec non mi nibh. Nunc et purus vitae augue consequat luctus a eu sem. Donec luctus euismod eros, ut auctor orci pretium nec.</p>
+                  <p>Pellentesque nec mattis mi. Integer eget diam ligula, tempor fermentum mi. Phasellus sed risus id tellus bibendum elementum. Sed sed turpis nunc, non laoreet justo. Mauris fermentum libero sit amet mi blandit in consequat felis gravida. Pellentesque erat tortor, venenatis vitae volutpat sit amet, tristique id velit. Aliquam nisi risus, laoreet ut gravida id, eleifend eu nisi. Maecenas varius, arcu sed cursus bibendum, turpis enim laoreet urna, sed sodales urna dolor ut arcu. Quisque dui mi, cursus at placerat sit amet, vestibulum eu nisi. Sed venenatis libero vel libero tincidunt id pulvinar ipsum</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="comment">
+              <div class="user"> <span class="img_comment"><img src="images/blog_comment_img.jpg" alt="blog image" width="80px" height="80px" /></span> <a href="#" title="">Andrew Baine</a>on 14.08.2009 </div>
+              <div class="message_down">
+                <div class="message_up">
+                  <p>Phasellus auctor tellus sit amet nibh lacinia sed lobortis magna commodo. Nullam arcu justo, sagittis in iaculis eu, lobortis quis ante. Pellentesque eu egestas nulla. Etiam at enim at odio gravida vestibulum. Vivamus ut tempor risus. Morbi eu purus urna. Donec non mi nibh. Nunc et purus vitae augue consequat luctus a eu sem. Donec luctus euismod eros, ut auctor orci pretium nec.</p>
+
+                  <p>Pellentesque nec mattis mi. Integer eget diam ligula, tempor fermentum mi. Phasellus sed risus id tellus bibendum elementum. Sed sed turpis nunc, non laoreet justo. Mauris fermentum libero sit amet mi blandit in consequat felis gravida. Pellentesque erat tortor, venenatis vitae volutpat sit amet, tristique id velit. Aliquam nisi risus, laoreet ut gravida id, eleifend eu nisi. Maecenas varius, arcu sed cursus bibendum, turpis enim laoreet urna, sed sodales urna dolor ut arcu. Quisque dui mi, cursus at placerat sit amet, vestibulum eu nisi. Sed venenatis libero vel libero tincidunt id pulvinar ipsum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio_box_noborder">
+            <div class="blog_title">
+              <h2>Add Your Comment</h2>
+
+             </div>
+            <div class="contact_form">
+              <form id="contactForm"  action="mail.php" method="post">
+                <fieldset>
+                  <ul>
+                    <li>
+                      <label class="text">Your Name :</label>
+                      <input class="text" name="name" id="name" type="text" />
+
+                      <span class="error"></span> </li>
+                    <li>
+                      <label class="text">Your Email :</label>
+                      <input class="text" name="email" id="email" type="text"  />
+                      <span class="error"></span> </li>
+                    <li>
+                      <label class="text">Website :</label>
+
+                      <input class="text" name="website" id="website" type="text"  />
+                      <span class="error"></span> </li>
+                    <li>
+                      <label class="text">Comment :</label>
+                      <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                      <span class="error"></span> </li>
+                    <li >
+
+                      <label class="text">&nbsp;</label>
+                      <input class="submit_blog" type="submit" name="" value="" id="submit"/>
+                      <div id="result"></div>
+                    </li>
+                  </ul>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+*/
+?>
+          <br style="clear: both;"/>
+          <div class="portfolio_box_menu"> <a href="<?php echo $this->url(array('module'=>'blog','controller'=>'index', 'action'=>'index')); ?>" id="back_to_portfolio">Back to Blog Index</a>
+            
+            
+          </div>
+          <br style="clear: both;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

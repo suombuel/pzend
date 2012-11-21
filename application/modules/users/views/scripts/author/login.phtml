@@ -1,0 +1,87 @@
+<?php if($this->failedValidation): ?>	
+	<div class="error">
+		<div class="error_inner">
+			<strong>Access Denied</strong> | <span>user/password combination wrong</span>
+		</div>	
+	</div>
+<?php elseif($this->failedAuthentication): ?>
+	<p class="error">Los datos ingresados no concuerdan. Por favor intentalo nuevamente.</p>
+<?php endif; ?>
+    
+<?php if($this->emailExist): ?>
+	<p class="error">El usuario exsite en la base de datos. <a href="/author/recover/email/<?php echo $this->email ?>">[Recordar contraseña]</a>.</p>
+<?php endif; ?>
+
+<?php if($this->statusState): ?>
+	<p class="error">Esta cuenta no ha sido VALIDADA. Por favor <a href="/author/validate/email/<?php echo $this->email ?>">[VALIDATE]</a> primero.</p>
+<?php endif; ?>
+<?php //echo $this->loginForm->render() ?>
+<?php if($this->passedAuthentication): ?>
+    
+<?php endif; ?>
+
+
+<?php 
+/*
+
+<dt id="name-label">
+	<label for="name" class="required">Email</label>
+</dt>
+<dd id="name-element">
+	<input type="text" name="name" id="name" value="" 
+		class="textarea_limit" size="30" maxlength="80" />
+</dd>
+
+
+
+<form action="#">
+	<fieldset>
+		<label>
+			<strong>Nombre:</strong>
+			<span class="input_wrapper"><input class="text" name="" type="text" /></span>
+		</label>
+		<label>
+			<strong>Password:</strong>
+			<span class="input_wrapper"><input class="text" name="" type="text" /></span>
+		</label>
+		<label class="remember">
+			<input name="" type="checkbox" value="" />
+			remember me on this computer
+		</label>
+		<ul class="buttons">
+			<li><input class="button" name="" type="image" src="styles/css/login/login.gif" /></li>
+			<li><input class="button" name="" type="image" src="styles/css/login/reset.gif" /></li>
+		</ul>
+	</fieldset>
+</form>
+
+*/
+?>
+		
+
+<div id="login_wrapper">
+<!--[if !IE]>start login box<![endif]-->
+	<div id="login_bg">
+		
+		<div id="login_box">
+			<!--[if !IE]>start login top<![endif]-->
+			<div id="login_top">
+				<!--[if !IE]>start login bottom<![endif]-->
+				<div id="login_bottom">
+					<strong class="title"><?=$this->translate("Please log in");?></strong>
+					<?= $this->form ?>					
+				</div>
+				<!--[if !IE]>end login bottom<![endif]-->
+			</div>
+			<!--[if !IE]>end login top<![endif]-->
+		</div>
+		
+		<ul id="login_box_menu">
+			<li class="left"><a href="#">Lost your password?</a></li>
+			<li class="right"><span>Powered by YourApp v0.2</span></li>
+		</ul>
+		
+	</div>	
+<!--[if !IE]>end login box<![endif]-->
+	
+</div>

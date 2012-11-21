@@ -1,0 +1,33 @@
+<br/>
+<h2><?=$this->translate("Modules");?></h2>
+<a href='<?= $this->url(
+			array('module' => 'users',
+				  'controller' => 'modules',
+				  'action'=>'add'), 'default', true) ?>'>insert</a>
+<table border=1>
+	<tr>
+		<th>id</th>
+		<th>module name</th>
+	<tr>
+	<?php foreach ($this->entries as $key => $value): ?>
+	<tr>
+		<td><?=$value["module_id"]?></td>
+		<td><?=$value["module_name"]?></td>
+		<td><a href='<?= $this->url(
+			array('module' => 'users',
+				  'controller' => 'modules',
+				  'action'=>'edit',
+				  'module_id'=>$value["module_id"]), 'default', true) ?>
+				  '>update</a> 
+			<a href='<?= $this->url(
+			array('module' => 'users',
+				  'controller' => 'modules',
+				  'action'=>'delete',
+				  'module_id'=>$value["module_id"]), 'default', true) ?>'>delete</a></td>
+	</tr>
+	<?php endforeach;?>
+</table>
+
+
+
+

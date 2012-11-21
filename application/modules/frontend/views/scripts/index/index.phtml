@@ -1,0 +1,7 @@
+<div id="content">
+	<?php foreach ($this->entries as $key => $value): ?>	
+		<?php echo $this->partial('partials/content.phtml', array('entry'=>$value));?>
+	<?php endforeach;?>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+

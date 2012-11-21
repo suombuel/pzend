@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence"
+         adminlang="en-us" srclang="de-at" o-tmf="abc"
+         creationtool="XYZTool" >
+ </header>
+ <body>
+  <tu tuid='Index'>
+   <tuv xml:lang="en"><seg>Index</seg></tuv>
+   <tuv xml:lang="es"><seg>Índice</seg></tuv>
+   <tuv xml:lang="de"><seg>Index</seg></tuv>
+  </tu>
+  <tu tuid='Administration'>
+   <tuv xml:lang="en"><seg>Administration</seg></tuv>
+   <tuv xml:lang="es"><seg>Administración</seg></tuv>
+   <tuv xml:lang="de"><seg>Administration</seg></tuv>
+  </tu>
+  <tu tuid='Welcome'>
+   <tuv xml:lang="en"><seg>Welcome</seg></tuv>
+   <tuv xml:lang="es"><seg>Bienvenido</seg></tuv>
+   <tuv xml:lang="de"><seg>Welcome</seg></tuv>
+   <tuv xml:lang="fr"><seg>Welcome</seg></tuv>
+   <tuv xml:lang="it"><seg>Welcome</seg></tuv>
+   <tuv xml:lang="nl"><seg>Welcome</seg></tuv>
+   <tuv xml:lang="pl"><seg>Welcome</seg></tuv>
+   <tuv xml:lang="ru"><seg>Welcome</seg></tuv>   
+  </tu>
+  <tu tuid='List Resources'>
+   <tuv xml:lang="en"><seg>List Resources</seg></tuv>
+   <tuv xml:lang="es"><seg>Lista de recursos</seg></tuv>
+   <tuv xml:lang="de"><seg>Liste Resources</seg></tuv>
+  </tu>
+  <tu tuid='Check Config'>
+   <tuv xml:lang="en"><seg>Check Config</seg></tuv>
+   <tuv xml:lang="es"><seg>Verificar Configuración</seg></tuv>
+   <tuv xml:lang="de"><seg>Check Config</seg></tuv>
+  </tu>
+  <tu tuid='Configuration checked'>
+   <tuv xml:lang="en"><seg>Configuration checked</seg></tuv>
+   <tuv xml:lang="es"><seg>Configuración verificada</seg></tuv>
+   <tuv xml:lang="de"><seg>Configuration checked</seg></tuv>
+  </tu>
+  <tu tuid='with'>
+   <tuv xml:lang="en"><seg>with</seg></tuv>
+   <tuv xml:lang="es"><seg>con</seg></tuv>
+   <tuv xml:lang="de"><seg>with</seg></tuv>
+  </tu>
+  <tu tuid='Ussing role'>
+   <tuv xml:lang="en"><seg>Ussing role</seg></tuv>
+   <tuv xml:lang="es"><seg>Usando el rol</seg></tuv>
+   <tuv xml:lang="de"><seg>Ussing role</seg></tuv>
+  </tu>
+  <tu tuid='vailable resources'>
+   <tuv xml:lang="en"><seg>Available resources</seg></tuv>
+   <tuv xml:lang="es"><seg>Recursos disponibles</seg></tuv>
+   <tuv xml:lang="de"><seg>Available resources</seg></tuv>
+  </tu>
+  <tu tuid='access to'>
+   <tuv xml:lang="en"><seg>access to</seg></tuv>
+   <tuv xml:lang="es"><seg>acceso a</seg></tuv>
+   <tuv xml:lang="de"><seg>access to</seg></tuv>
+  </tu>
+  <tu tuid='Logout'>
+   <tuv xml:lang="en"><seg>Logout</seg></tuv>
+   <tuv xml:lang="es"><seg>Salir</seg></tuv>
+   <tuv xml:lang="de"><seg>Logout</seg></tuv>
+  </tu>
+
+  </body>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+ <header creationtoolversion="1.0.0" datatype="winres" segtype="sentence"
+         adminlang="en-us" srclang="de-at" o-tmf="abc"
+         creationtool="XYZTool" >
+ </header>
+ <body>
+ <tu tuid='Language'>
+   <tuv xml:lang="en"><seg>English</seg></tuv>
+   <tuv xml:lang="es"><seg>Español</seg></tuv>
+   <tuv xml:lang="de"><seg>Deutsch</seg></tuv>
+   <tuv xml:lang="fr"><seg>Français</seg></tuv>
+   <tuv xml:lang="it"><seg>Italiano</seg></tuv>
+   <tuv xml:lang="nl"><seg>Nederlands</seg></tuv>
+   <tuv xml:lang="pl"><seg>Polski</seg></tuv>
+   <tuv xml:lang="ru"><seg>Русский</seg></tuv>
+  </tu>
+  <tu tuid='SEE ALL NEWS'>
+   <tuv xml:lang="en"><seg>SEE ALL NEWS</seg></tuv>
+   <tuv xml:lang="es"><seg>TODAS LAS NOTICIAS</seg></tuv>   
+  </tu>
+  <tu tuid='Latest News'>
+   <tuv xml:lang="en"><seg>Latest News</seg></tuv>
+   <tuv xml:lang="es"><seg>Noticias</seg></tuv>   
+  </tu>
+  <tu tuid='Contact Info'>
+   <tuv xml:lang="en"><seg>Contact Info</seg></tuv>
+   <tuv xml:lang="es"><seg>Contactanos</seg></tuv>   
+  </tu>
+  <tu tuid='Contact us'>
+   <tuv xml:lang="en"><seg>Please don’t hesitate to contact us if you have any questions or in order to comission work. Here are our contact details</seg></tuv>
+   <tuv xml:lang="es"><seg>Si tienes alguna duda, no dudes en contactar con nosotros. También podemos ayudarte a organizar tu proyecto.</seg></tuv>   
+  </tu>
+  <tu tuid='Web'>
+   <tuv xml:lang="en"><seg>Web</seg></tuv>
+   <tuv xml:lang="es"><seg>Web</seg></tuv>   
+  </tu>
+  <tu tuid='Email'>
+   <tuv xml:lang="en"><seg>E-mail</seg></tuv>
+   <tuv xml:lang="es"><seg>Email</seg></tuv>   
+  </tu>
+  <tu tuid='OPEN CONTACT FORM'>
+   <tuv xml:lang="en"><seg>OPEN CONTACT FORM</seg></tuv>
+   <tuv xml:lang="es"><seg>CONTÁCTANOS</seg></tuv>   
+  </tu>
+  <tu tuid='All rights reserved'>
+   <tuv xml:lang="en"><seg>All rights reserved</seg></tuv>
+   <tuv xml:lang="es"><seg>Todos los derechos reservados</seg></tuv>   
+  </tu>
+  <tu tuid='Orkestor, Audiovisual Resource Management'>
+   <tuv xml:lang="en"><seg>Orkestor, Audiovisual Resource Management</seg></tuv>
+   <tuv xml:lang="es"><seg>Orkestor, Administrador de Recursos Audiovisuales</seg></tuv>   
+  </tu>
+  <tu tuid='How to'>
+   <tuv xml:lang="en"><seg>How to</seg></tuv>
+   <tuv xml:lang="es"><seg>Cómo hago...?</seg></tuv>   
+  </tu>
+  <tu tuid='what is'>
+   <tuv xml:lang="en"><seg>is an application for management resources of an audiovisual production: scheduling, script breakdown, order priorities and print reports, in an intuitive, easy to use, and time saving fashion. Here, the workgroup of the production can work as a Team, sharing information all the time.</seg></tuv>
+   <tuv xml:lang="es"><seg>es una herramienta para manejar los recursos de una producción audivovisual: programar tiempos, desglosar, ordenar prioridades y generar reportes. Todo esto trabajando de una manera intuitiva, facil de usar y rápida, potenciando el trabajo en equipo y compartiendo la información en todo momento.</seg></tuv>   
+  </tu>
+  <tu tuid='Start now'>
+   <tuv xml:lang="en"><seg></seg></tuv>
+   <tuv xml:lang="es"><seg>Cómo empezar con Orkestor. Descubre como utilizar las herramientas de una forma fácil y rápida mientras trabajas en tu proyecto.</seg></tuv>   
+  </tu>
+  <tu tuid='More info'>
+   <tuv xml:lang="en"><seg>MORE INFO</seg></tuv>
+   <tuv xml:lang="es"><seg>MÁS INFORMACIÓN</seg></tuv>   
+  </tu>
+  <tu tuid='Log out'>
+   <tuv xml:lang="en"><seg>Log out</seg></tuv>
+   <tuv xml:lang="es"><seg>Salir</seg></tuv>   
+  </tu>
+  
+  
+  </body>

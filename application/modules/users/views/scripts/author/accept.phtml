@@ -1,0 +1,19 @@
+<div id="generic_wrap" class="column span-16">
+    <div id="generic_group">    
+        <h2>Registro</h2>
+		<?php if($this->dataProblem): ?>
+		    <p class="success">Ha ocurrido un error. Intente <a href="<?php echo $this->baseUrl();?>/author/validate/email/<?php echo $this->email ?>">[VALIDARSE]</a> otra vez.</p>
+		<?php endif; ?>
+		
+		<?php if($this->failedValidation): ?>
+    		<p class="error">Ha ocurrido un error.</p>
+    	<?php endif; ?>
+
+		<?php if($this->entrySaved): ?>
+    		<p class="success">Registro completado. Gracias por usar Iturismo. <a href="<?php echo $this->baseUrl();?>/author/login/">[Login]</a>.</p>
+		<?php elseif($this->failedFind): ?>
+    		<p class="error">El usuario no se encuentra en la base de datos.</p>
+		<?php endif; ?>
+		<?php echo $this->entryForm ?>
+    </div><!-- end #generic_group -->
+</div><!-- end #generic_wrap -->

@@ -1,0 +1,33 @@
+<br/>
+<h2><?=$this->translate("Modules");?></h2>
+<a href='<?= $this->url(
+			array('module' => 'staticcontent',
+				  'controller' => 'index',
+				  'action'=>'add'), 'default', true) ?>'>insert</a>
+<table border=1>
+	<tr>
+		<th>date</th>
+		<th>content</th>
+	<tr>
+	<?php foreach ($this->entries as $key => $value): ?>
+	<tr>
+		<td><?=$value["date"]?></td>
+		<td><?=$value["content_es"]?></td>
+		<td><a href='<?= $this->url(
+			array('module' => 'staticcontent',
+				  'controller' => 'index',
+				  'action'=>'edit',
+				  'id'=>$value["id"]), 'default', true) ?>
+				  '>update</a> 
+			<a href='<?= $this->url(
+			array('module' => 'staticcontent',
+				  'controller' => 'index',
+				  'action'=>'delete',
+				  'id'=>$value["id"]), 'default', true) ?>'>delete</a></td>
+	</tr>
+	<?php endforeach;?>
+</table>
+
+
+
+

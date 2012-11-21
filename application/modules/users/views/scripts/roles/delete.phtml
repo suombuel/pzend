@@ -1,0 +1,15 @@
+<form action="<?= $this->url(
+			array('module' => 'users',
+				  'controller' => 'roles',
+				  'action'=>'delete'), 'default', true) ?>" method="post">
+<h3>
+	<?=$this->translate("Are you sure you want to delete");?> 
+	'<?php echo $this->escape($this->entry['role_name']); ?>'?
+</h3><br/>
+<!--[if !IE]>start forms<![endif]-->
+<input type="hidden" name="role_id" value="<?php echo $this->entry['role_id']; ?>" />
+
+
+<input type="submit" name="del" value="<?=$this->translate("Yes");?>" /></span>
+<input type="submit" name="del" value="<?=$this->translate("No");?>" /></span> 
+</form>				

@@ -1,0 +1,40 @@
+<div class="section">	
+	<!--[if !IE]>start title wrapper<![endif]-->
+	<div class="title_wrapper">
+		<span class="title_wrapper_top"></span>
+		<div class="title_wrapper_inner">
+			<span class="title_wrapper_middle"></span>
+			<div class="title_wrapper_content">
+				<h2><?=$this->translate("Delete Permission");?></h2>
+			</div>
+		</div>
+		<span class="title_wrapper_bottom"></span>
+	</div>
+	<!--[if !IE]>end title wrapper<![endif]-->
+	
+	<!--[if !IE]>start section content<![endif]-->
+	<div class="section_content">
+		<span class="section_content_top"></span>
+		
+		<div class="section_content_inner">
+		<form action="<?= $this->url(array('module' => 'users','controller' => 'permissions','action'=>'delete'), 'default', true) ?>" method="post">
+			<h3>
+				<?=$this->translate("Are you sure you want to delete");?> 
+				'<?php echo $this->escape($this->entry['permission']); ?>' <?=$this->translate("in");?> 
+				'<?php echo $this->escape($this->entry['resource_uid']); ?>'?
+			</h3><br/>
+			<!--[if !IE]>start forms<![endif]-->
+			<input type="hidden" name="permission_id" value="<?php echo $this->entry['permission_id']; ?>" />
+			<div class="forms_wrapper">
+				<div class="row">
+					<div class="inputs">
+						<span class="button green_button"><span><span><?=$this->translate("Yes");?></span></span><input type="submit" name="del" value="<?=$this->translate("Yes");?>" /></span>
+						<span class="button gray_button"><span><span><?=$this->translate("No");?></span></span> <input type="submit" name="del" value="<?=$this->translate("No");?>" /></span> 
+					</div>
+				</div>
+			</div>
+		</form>
+		</div>
+		</div>
+<!--[if !IE]>end forms<![endif]-->
+</div>

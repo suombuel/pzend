@@ -1,0 +1,13 @@
+<div id="generic_wrap" class="column span-16">
+    <div id="generic_group">    
+        <h2>Recordar Contraseña</h2>
+        <?php if($this->entrySaved): ?>
+		    <p>Te hemos enviado un email con tu NUEVO password.</p>
+        	<p>Gracias por usar iPtours.</p>
+        	<p><a href="<?php echo $this->baseUrl();?>/author/login/">Login</a></p>
+		<?php endif; ?>
+		<?php if($this->statusState): ?>
+		    <p class="error">Esta cuenta no ha sido VALIDADA. Por favor <a href="/author/validate/email/<?php echo $this->email ?>">[VALIDATE]</a> primero.</p>
+		<?php endif; ?>
+    </div><!-- end #generic_group -->
+</div><!-- end #generic_wrap -->

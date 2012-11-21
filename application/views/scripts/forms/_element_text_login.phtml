@@ -1,0 +1,10 @@
+<label>
+	<strong><?=$this->translate($this->element->getLabel());?></strong>
+	<span class="input_wrapper">
+	<?php echo $this->{$this->element->helper}(
+		        $this->element->getName(),
+		        $this->element->getValue(),
+		        $this->element->getAttribs()
+		    ) ?>
+	</span>
+</label>

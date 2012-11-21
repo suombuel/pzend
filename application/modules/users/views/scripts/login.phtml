@@ -1,0 +1,41 @@
+ <?php
+
+/**
+ * Default Layout
+ *  
+ * @author
+ * @version
+ */
+
+echo '<?xml version="1.0" encoding="UTF-8" ?>';
+echo $this->doctype();
+?>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="imagetoolbar" content="no" />
+		<?= $this->headTitle($this->escape($this->title)) ?>
+		<?= $this->headLink()->setStylesheet($this->baseUrl('/styles/css/login.css'), 'screen, projection')?>		
+		<?= $this->headLink()->setStylesheet($this->baseUrl('/styles/css/ie.css'), 'screen, projection', 'lte IE 6')?>
+		
+		<?php
+	    echo $this->headScript();
+	    echo $this->headStyle();
+	    ?>
+	</head>
+	
+
+<body class="login">
+
+<div class="top"></div>
+<!--[if !IE]>start wrapper<![endif]-->
+<div id="wrapper">
+	<?= $this->layout()->content ?>	
+</div>
+<!--[if !IE]>end wrapper<![endif]-->
+<div class="bottom"></div>
+
+</body>
+</html>

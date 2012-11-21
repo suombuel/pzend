@@ -1,0 +1,34 @@
+    <div id="loginForm">
+	<div id="login-top"></div>
+	
+	<div id="login-content">
+	
+		<table class="loginForm table-middle" cellpadding="2" cellspacing="2">
+			<tr><td>
+			<?php if($this->failedValidation): ?>
+    	<p class="error">Ha ocurrido un error.</p>
+   	<?php elseif($this->failedAuthentication): ?>
+    	<p class="error">Los datos ingresados no concuerdan. Por favor intentalo nuevamente.</p>
+    <?php endif; ?>
+        
+     <?php if($this->emailExist): ?>
+    	<p class="error">El usuario exsite en la base de datos. <a href="/author/recover/email/<?php echo $this->email ?>">[Recordar contraseña]</a>.</p>
+	<?php endif; ?>
+
+	<?php if($this->statusState): ?>
+    	<p class="error">Esta cuenta no ha sido VALIDADA. Por favor <a href="/author/validate/email/<?php echo $this->email ?>">[VALIDATE]</a> primero.</p>
+	<?php endif; ?>
+	<?php //echo $this->loginForm->render() ?>
+    <?php if($this->passedAuthentication): ?>
+        
+    <?php endif; ?>
+			</td></tr>
+			<tr><td>
+		
+    	<?= $this->form ?>
+    		</td></tr></table>
+	</div>
+	<div id="login-bottom"></div>
+	</div>
+	
+		

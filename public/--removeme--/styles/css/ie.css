@@ -1,0 +1,40 @@
+.inner_page #wrapper {
+	height: 100%;
+}
+
+#main_info_bottom {
+	height: 200px;
+}
+
+#main_menu_right {
+	height: 1px;
+}
+
+#main_menu a {
+	height: 1px;
+}
+
+#main_menu {
+	behavior: url(css/csshover.htc);
+}
+#main_menu .sub a {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.button input {
+	filter: alpha(opacity=0);
+}
+
+.tooltip_bottom {
+	height: 1px;
+}
+
+.system_messages li  {
+	height: 1px;
+}
+
+.system_messages span.ico {
+	behavior: url(css/iepngfix.htc)
+}

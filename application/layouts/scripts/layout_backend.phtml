@@ -1,0 +1,64 @@
+<?php echo $this->doctype() ?> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <?= $this->headTitle($this->escape($this->title)) ?>
+        <?= $this->headLink(array('rel' => 'shortcut icon','href' => $this->baseUrl('/images/favicon.ico')),'PREPEND') ?>
+        <?php echo $this->headLink()->appendStylesheet($this->baseUrl('/css/global.css'), 'screen, projection') ?>
+        <?php echo $this->headScript() ?>
+        <?php echo $this->headScript()->setFile($this->baseUrl('/scripts/js/ultra/behaviour.js'), 'text/javascript'); ?>
+   		
+</head>
+<body onload ="initialize()" onunload="GUnload()" style="font-family: Arial; border:0 none;">
+<div>
+<b>Ag :: Admin</b>
+<a href="<?php echo $this->url(array('module'=>'users','controller'=>'author', 'action'=>'logout'), 'default', true) ?>">logout</a>
+</div>
+<div id="header" style="background-color: #EEEEEE; height: 30px;">
+    
+    <div id="header-logo" style="float: left">
+        <?php 
+							$acl = Users_Model_Acl::getInstance();
+							$list=$acl->listResourceByUser();
+							echo $this->navigation()
+			       			    ->breadcrumbs()
+			       			    ->setMinDepth(0)
+			       			    ->setLinkLast(false)
+			       			    ->setSeparator(" : ")
+			       			    ->setAcl($acl)
+						    	->setRole($list['role'])
+       			    	;?>
+    </div>
+    <div id="header-navigation" style="float: right">
+         <?php
+//		require_once APPLICATION_PATH . '/modules/default/forms/Languages.php';
+		$form = new Default_Form_Languages();
+	    echo $form;
+    ?>  
+<!--        <a href="<?php echo $this->url(array('module'=>'users','controller'=>'author', 'action'=>'logout'), 'default', true) ?>">logout</a> | -->
+<!--        <a href="<?php echo $this->url(array('controller'=>'guestbook'), 'default', true) ?>">Guestbook</a> | -->
+<!--        <a href="<?php echo $this->url(array('controller'=>'usuarios'), 'default', true) ?>">Usuarios</a> | -->
+<!--        <a href="<?php echo $this->url(array('module'=>'users','controller'=>'users'), 'default', true) ?>">Users</a>-->
+<!--    -->
+    </div>
+</div>
+<div>ss
+<?php
+				$acl = Users_Model_Acl::getInstance();
+				$list=$acl->listResourceByUser();
+					//Zend_Debug::dump($list); 
+				echo $this->navigation()
+                    ->menu()
+                    ->setPartial(array('_element_menu.phtml', 'default'))
+                    ->setMaxDepth(1)
+                    ->setTranslator(Zend_Registry::get('Zend_Translate'))
+                     ->setUlClass('')
+                    ->setOnlyActiveBranch(false)
+                    ->setAcl($acl)
+				  	->setRole($list['role']);
+                    ?>
+</div>
+<?php echo $this->layout()->content ?>
+</body>
+</html>

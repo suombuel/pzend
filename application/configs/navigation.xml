@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<nav>
+		<admin>
+			<label>Admin</label>
+			<module>admin</module>
+			<controller>index</controller> 
+            <action>index</action>
+            <resource>admin:index</resource>
+            <privilege>index</privilege>
+            <pages>
+				<list>
+					<label>List Resources</label>					
+					<module>admin</module>
+					<controller>index</controller> 
+               		<action>listresources</action>
+               		<resource>admin:index</resource>
+            		<privilege>listresources</privilege>
+				</list>
+				<check>
+					<label>Check Config</label>
+					<uri>/admin/index/checkconfig</uri>
+					<resource>admin:index</resource>
+            		<privilege>checkconfig</privilege>
+				</check>
+			</pages>
+		</admin>
+		<flights>
+			<label>Vuelos</label>
+			<module>flights</module>
+			<controller>index</controller> 
+            <action>index</action>
+            <resource>flights:index</resource>
+            <privilege>index</privilege>
+            <pages>
+				<list>
+					<label>Monitor Status</label>					
+					<module>flights</module>
+					<controller>index</controller> 
+               		<action>status</action>
+               		<resource>flights:index</resource>
+            		<privilege>status</privilege>
+				</list>
+				<check>
+					<label>Search Flights</label>
+					<uri>/flights/index/search</uri>
+					<resource>flights:index</resource>
+            		<privilege>search</privilege>
+				</check>
+			</pages>
+		</flights>
+		<hotels>
+			<label>Hoteles</label>
+			<module>hotels</module>
+			<controller>index</controller> 
+            <action>index</action>
+            <resource>hotels:index</resource>
+            <privilege>index</privilege>
+            <pages>
+				<list>
+					<label>Monitor Status</label>					
+					<module>hotels</module>
+					<controller>index</controller> 
+               		<action>status</action>
+               		<resource>hotels:index</resource>
+            		<privilege>status</privilege>
+				</list>
+				<check>
+					<label>Search Hotels</label>
+					<uri>/hotels/index/search</uri>
+					<resource>hotels:index</resource>
+            		<privilege>search</privilege>
+				</check>
+			</pages>
+		</hotels>
+		<iturismo>
+			<label>iTurismo</label>
+			<uri>/iturismo</uri>
+			<resource>iturismo:index</resource>
+			<privilege>index</privilege>
+			<pages>
+				
+				<offices>
+					<label>Oficina</label>
+					<uri>/iturismo/offices/index</uri>
+					<resource>iturismo:offices</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Oficina</label>
+							<uri>/iturismo/offices/add</uri>
+							<resource>iturismo:offices</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Oficina</label>
+							<uri>/iturismo/offices/edit</uri>
+							<resource>iturismo:offices</resource>
+		            		<privilege>edit</privilege>		            		
+		            	</edit>
+		            	<delete>
+							<label>Borrar Oficinas</label>
+							<uri>/iturismo/offices/delete</uri>
+							<resource>iturismo:offices</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</offices>
+				<news>
+					<label>Noticias</label>
+					<uri>/iturismo/news/index</uri>
+					<resource>iturismo:news</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Noticia</label>
+							<uri>/iturismo/news/add</uri>
+							<resource>iturismo:news</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Noticia</label>
+							<uri>/iturismo/news/edit</uri>
+							<resource>iturismo:news</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Noticia</label>
+							<uri>/iturismo/news/delete</uri>
+							<resource>iturismo:news</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</news>
+				<recommended>
+					<label>Recomendados</label>
+					<uri>/iturismo/recommended/index</uri>
+					<resource>iturismo:recommended</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Recomendado</label>
+							<uri>/iturismo/recommended/add</uri>
+							<resource>iturismo:recommended</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Recomendado</label>
+							<uri>/iturismo/recommended/edit</uri>
+							<resource>iturismo:recommended</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Recomendado</label>
+							<uri>/iturismo/recommended/delete</uri>
+							<resource>iturismo:recommended</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</recommended>
+                                <galeries>
+					<label>Galerías</label>
+					<uri>/iturismo/galeries/index</uri>
+					<resource>iturismo:galeries</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Galería</label>
+							<uri>/iturismo/galeries/add</uri>
+							<resource>iturismo:galeries</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Galería</label>
+							<uri>/iturismo/galeries/edit</uri>
+							<resource>iturismo:galeries</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Galería</label>
+							<uri>/iturismo/galeries/delete</uri>
+							<resource>iturismo:galeries</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</galeries>
+				<images>
+					<label>Imágenes</label>
+					<uri>/iturismo/images/index</uri>
+					<resource>iturismo:images</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Imagen</label>
+							<uri>/iturismo/images/add</uri>
+							<resource>iturismo:images</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Imagen</label>
+							<uri>/iturismo/images/edit</uri>
+							<resource>iturismo:images</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Imagen</label>
+							<uri>/iturismo/images/delete</uri>
+							<resource>iturismo:images</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</images>
+                <video>
+					<label>Videos</label>
+					<uri>/iturismo/video/index</uri>
+					<resource>iturismo:video</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Video</label>
+							<uri>/iturismo/video/add</uri>
+							<resource>iturismo:video</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Video</label>
+							<uri>/iturismo/video/edit</uri>
+							<resource>iturismo:video</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Video</label>
+							<uri>/iturismo/video/delete</uri>
+							<resource>iturismo:video</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</video>
+				<banners>
+					<label>Banners</label>
+					<uri>/iturismo/banners/index</uri>
+					<resource>iturismo:banners</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Banner</label>
+							<uri>/iturismo/banners/add</uri>
+							<resource>iturismo:banners</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Banner</label>
+							<uri>/iturismo/banners/edit</uri>
+							<resource>iturismo:banners</resource>
+		            		<privilege>edit</privilege>		            		
+		            	</edit>
+		            	<delete>
+							<label>Borrar Banner</label>
+							<uri>/iturismo/banners/delete</uri>
+							<resource>iturismo:banners</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</banners>
+				
+				<regions>
+					<label>Regiones</label>
+					<uri>/iturismo/regions/index</uri>
+					<resource>iturismo:regions</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Región</label>
+							<uri>/iturismo/regions/add</uri>
+							<resource>iturismo:regions</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Región</label>
+							<uri>/iturismo/regions/edit</uri>
+							<resource>iturismo:regions</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Región</label>
+							<uri>/iturismo/regions/delete</uri>
+							<resource>iturismo:regions</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</regions>
+				<clients>
+					<label>Cliente</label>
+					<uri>/iturismo/clients/index</uri>
+					<resource>iturismo:clients</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Cliente</label>
+							<uri>/iturismo/clients/add</uri>
+							<resource>iturismo:clients</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Cliente</label>
+							<uri>/iturismo/clients/edit</uri>
+							<resource>iturismo:clients</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Cliente</label>
+							<uri>/iturismo/clients/delete</uri>
+							<resource>iturismo:clients</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</clients>
+                                <admin>
+					<label>Admin</label>
+					<uri>/iturismo/admin/index</uri>
+					<resource>iturismo:admin</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Relación</label>
+							<uri>/iturismo/admin/add</uri>
+							<resource>iturismo:admin</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Relación</label>
+							<uri>/iturismo/admin/edit</uri>
+							<resource>iturismo:admin</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Relación</label>
+							<uri>/iturismo/admin/delete</uri>
+							<resource>iturismo:admin</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</admin>
+                                <frontend>
+					<label>iTurismo</label>
+					<target>_blank</target>
+					<uri>/iturismo/frontend</uri>
+					<resource>iturismo:frontend</resource>
+            		<privilege>index</privilege>
+				</frontend>
+			</pages>
+		</iturismo>
+		<users>
+			<label>Usuarios</label>
+			<uri>/users/index/index</uri>
+			<resource>users:index</resource>
+			<privilege>index</privilege>
+			<pages>
+				<listusers>
+					<label>Users</label>
+					<uri>/users/index</uri>
+					<resource>users:index</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Usuario</label>
+							<uri>/users/index/add</uri>
+							<resource>users:index</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Usuario</label>
+							<uri>/users/index/edit</uri>
+							<resource>users:index</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Usuario</label>
+							<uri>/users/index/delete</uri>
+							<resource>users:index</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+		            	<password>
+							<label>Editar Password</label>
+							<uri>/users/index/editpassword</uri>
+							<resource>users:index</resource>
+		            		<privilege>editpassword</privilege>
+		            	</password>
+            		</pages>
+				</listusers>
+				<roles>
+					<label>Roles</label>
+					<uri>/users/roles/index</uri>
+					<resource>users:roles</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Rol</label>
+							<uri>/users/roles/add</uri>
+							<resource>users:roles</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Rol</label>
+							<uri>/users/roles/edit</uri>
+							<resource>users:roles</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Rol</label>
+							<uri>/users/roles/delete</uri>
+							<resource>users:roles</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</roles>
+				<resources>
+					<label>Resources</label>
+					<uri>/users/resources/index</uri>
+					<resource>users:resources</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Resource</label>
+							<uri>/users/resources/add</uri>
+							<resource>users:resources</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Resource</label>
+							<uri>/users/resources/edit</uri>
+							<resource>users:resources</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Resource</label>
+							<uri>/users/resources/delete</uri>
+							<resource>users:resources</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</resources>
+				<permissions>
+					<label>Permissions</label>
+					<uri>/users/permissions/index</uri>
+					<resource>users:permissions</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Permission</label>
+							<uri>/users/permissions/add</uri>
+							<resource>users:permissions</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Permission</label>
+							<uri>/users/permissions/edit</uri>
+							<resource>users:permissions</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Permission</label>
+							<uri>/users/permissions/delete</uri>
+							<resource>users:permissions</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</permissions>
+				<modules>
+					<label>Módulos</label>
+					<uri>/users/modules/index</uri>
+					<resource>users:modules</resource>
+            		<privilege>index</privilege>
+            		<pages>
+            			<add>
+							<label>Agregar Módulo</label>
+							<uri>/users/modules/add</uri>
+							<resource>users:modules</resource>
+		            		<privilege>add</privilege>
+		            	</add>
+		            	<edit>
+							<label>Editar Módulo</label>
+							<uri>/users/modules/edit</uri>
+							<resource>users:modules</resource>
+		            		<privilege>edit</privilege>
+		            	</edit>
+		            	<delete>
+							<label>Borrar Módulo</label>
+							<uri>/users/modules/delete</uri>
+							<resource>users:modules</resource>
+		            		<privilege>delete</privilege>
+		            	</delete>
+            		</pages>
+				</modules>
+				<list>
+					<label>List Resources</label>
+					<uri>/users/resources/listresources</uri>
+					<resource>users:resources</resource>
+            		<privilege>listresources</privilege>
+				</list>
+			</pages>
+		</users>
+	</nav>
+</config>

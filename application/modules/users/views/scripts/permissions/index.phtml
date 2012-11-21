@@ -1,0 +1,71 @@
+<!--[if !IE]>start section<![endif]-->
+<div class="section">
+	
+	<!--[if !IE]>start title wrapper<![endif]-->
+	<div class="title_wrapper">
+		<span class="title_wrapper_top"></span>
+		<div class="title_wrapper_inner">
+			<span class="title_wrapper_middle"></span>
+			<div class="title_wrapper_content">
+				<h2><?=$this->translate("Permissions list");?>:</h2>
+			</div>
+		</div>
+		<span class="title_wrapper_bottom"></span>
+	</div>
+	<!--[if !IE]>end title wrapper<![endif]-->
+	
+	<!--[if !IE]>start section content<![endif]-->
+	<div class="section_content">
+		<span class="section_content_top"></span>
+		
+		<div class="section_content_inner">
+			
+			<div class="table_tabs_menu">
+			<a class="update" href="<?php echo $this->url(array('controller'=>'permissions','action'=>'add'));?>">
+				<span><span><em><?=$this->translate("Add New Permission");?></em><strong></strong></span></span>
+			</a>
+			
+			</div>
+		
+			<!--[if !IE]>start table_wrapper<![endif]-->
+			<div class="table_wrapper">
+				<div class="table_wrapper_inner">
+				<table cellpadding="0" cellspacing="0" width="100%">
+					
+					<tbody><tr>
+						<th style="width: 147px;"><?=$this->translate("Role");?></th>
+						<th class="photo"><span><?=$this->translate("Resource");?></span></th>
+						<th><a href="#" class="asc"><?=$this->translate("Permission");?></a></th>
+						<th style="width: 181px;"><?=$this->translate("Name");?></th>
+						<th style="width: 60px;"><a href="#" class="desc"><?=$this->translate("Menu");?></a></th>																	
+						<th style="width: 165px;"><?=$this->translate("Actions");?></th>
+					</tr>	
+					<?php foreach($this->paginator as $entry) : ?>
+						<tr class="<?php echo $this->cycle(array("first","second"))->next()?>" >
+							<td><?php echo $this->escape($entry['role_name']);?></td>
+				            <td><?php echo $this->escape($entry['resource']);?></td>
+				            <td><?php echo $this->escape($entry['permission']);?></td>
+				            <td><?php echo $this->escape($entry['name']);?></td>
+				            <td><?php echo $this->escape($entry['menu']);?></td>								            
+				            <td>
+								<div class="actions_menu">
+									<ul>
+										<li><a class="edit" href="<?php echo $this->url(array('controller'=>'permissions','action'=>'edit', 'permission_id'=>$entry['permission_id']));?>"><?=$this->translate("Edit");?></a></li>
+										<li><a class="delete" href="<?php echo $this->url(array('controller'=>'permissions','action'=>'delete', 'permission_id'=>$entry['permission_id']));?>"><?=$this->translate("Delete");?></a></li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					<?php endforeach; ?>									
+				</tbody></table>
+				</div>
+			</div>
+			<!--[if !IE]>end table_wrapper<![endif]-->
+			
+		</div>
+		<?php echo $this->paginator; ?>						
+		<span class="section_content_bottom"></span>
+	</div>
+	<!--[if !IE]>end section content<![endif]-->
+</div>
+<!--[if !IE]>end section<![endif]-->

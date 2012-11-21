@@ -1,0 +1,273 @@
+/* start details */
+#details_menu {
+	float: right;
+	margin: 0;
+	padding: 18px 0 0;
+}
+#details_menu li {
+	float: left;
+	margin: 0;
+	padding: 0 4px 0 0;
+	list-style: none;
+}
+
+#details_menu a:link, #details_menu a:visited, #details_menu a:hover, #details_menu a:active {
+	display: block;
+	line-height: 36px;
+	background:url(layout/details_middle.gif) repeat-x;
+	font-weight: bold;
+	font-size: 18px;
+	color: #3e3e3e;
+	
+}
+
+#details_menu span {
+	display: block;
+	background:url(layout/details_left.gif) no-repeat;
+}
+#details_menu span span {
+	background:url(layout/details_right.gif) no-repeat right center;
+	padding: 0 11px;
+}
+
+#details_menu em {
+	font-style: normal;
+	padding: 0 0 0 25px;
+	display: block;
+}
+
+.back em {
+	background:url(layout/back.gif) no-repeat;
+}
+
+.edit_all em {
+	background:url(layout/edit_all.gif) no-repeat;
+}
+
+
+#product_page {
+	width: 100%;
+	overflow: hidden;
+	padding: 15px 0 0;
+}
+
+#product_content {
+	width: 538px;
+	float: left;
+	
+}
+
+#product_gallery {
+	width: 345px;
+	float: right;
+	
+}
+
+.module {
+	border: 1px solid #dbdbdb;
+	background: #fefefe;
+	margin: 0 0 11px;
+	
+}
+
+.module_top {
+	
+	width: 100%;
+	overflow: hidden;
+	line-height: 26px;
+	background: #f2f2f2 url(layout/module_top.gif) repeat-x;
+}
+
+.module_bottom {
+	padding: 5px 10px;
+	border: solid #dbdbdb;
+	border-width: 1px 0 0;
+	font-size: 13px;
+	color: #3c3f42;
+	line-height: 18px;
+	background:url(layout/module_bottom.gif) repeat-x;
+}
+
+.module_bottom a:link, .module_bottom a:visited, .module_bottom a:active {
+	color: #6082b9;
+	text-decoration: underline;
+}
+
+.module_bottom a:hover {
+	text-decoration: none;
+}
+
+h5 {
+	font-size: 13px;
+	font-weight: bold;
+	color: #455065;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+}
+
+.module h5 {
+	float: left;
+	margin: 0 0 0 10px;
+	display: inline;
+}
+
+.edit_module:link, .edit_module:visited, .edit_module:hover, .edit_module:active {
+	float: right;
+	font-weight: bold;
+	color: #1f476f;
+	background:url(layout/edit_module.gif) no-repeat left center;
+	padding: 0 0 0 16px;
+	position: relative;
+	top: 0;
+	right: 10px;
+}
+
+.help_module {
+	background:url(layout/help_module.gif) no-repeat left center !important;
+}
+
+.add_module {
+	background:url(layout/add_module.gif) no-repeat left center !important;
+}
+
+.module_options {
+	width: 100%;
+	overflow: hidden;
+}
+
+.module_options_inner {
+	float: left;
+	width: 200%;
+}
+
+.module_option {
+	float: left;
+	width: 162px;
+	padding: 0 20px 0 0;
+}
+
+.module_option dl {
+	margin: 0;
+	padding: 0;
+}
+
+.module_option dt {
+	font-weight: bold;
+	margin: 0;
+	padding: 0 0 3px;
+}
+
+.module_option dd {
+	margin: 0;
+	padding: 0;
+}
+
+.gallery {
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery_inner {
+	width: 400px;
+	float: left;
+}
+
+.gallery dl {
+	margin: 0;
+	padding: 5px 10px 5px 0;
+	float: left;
+	width: 101px;
+}
+
+.gallery dt {
+	margin: 0 0 1px;
+	padding: 2px;
+	background: #dbdbdb;
+}
+
+.gallery dt  strong {
+	font-size: 9px;
+	font-weight: normal;
+	display: block;
+	white-space: nowrap;
+	width: 91px;
+	overflow: hidden;
+	padding: 0 3px;
+}
+
+.gallery dt a {
+	display: block;
+	
+}
+
+.gallery dt a img {
+	display: block;
+	border: 0;
+}
+
+.gallery dd {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	background: #f1f1f1;
+}
+
+.gallery dd em {
+	float: left;
+	display: block;
+	white-space: nowrap;
+	color: #a8a8a8;
+	font-size: 9px;
+	padding: 0 0 0 5px;
+	font-style: normal;
+	line-height: 16px;
+}
+
+.gallery dd ul {
+	margin: 0;
+	padding: 0 5px 0 0;
+	float: right;
+}
+
+.gallery dd ul li {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 7px;
+	list-style: none;
+}
+
+.gallery dd a:link,  .gallery dd a:visited, .gallery dd a:hover, .gallery dd a:active {
+	display: block;
+	width: 13px;
+	height: 13px;
+	overflow: hidden;
+	text-indent: -3000px;
+}
+
+.edit_product {
+	background:url(layout/edit_module.gif) no-repeat center center;
+}
+
+.delete_product {
+	background:url(layout/action4.gif) no-repeat center center;
+	
+}
+
+
+#product_gallery h5 {
+	color: #3c3f42;
+}
+
+#product_gallery h5 span {
+	color: #89898a;
+	font-weight: normal;
+	font-size: 11px;
+}
+
+
+
+/* end details */
+
+

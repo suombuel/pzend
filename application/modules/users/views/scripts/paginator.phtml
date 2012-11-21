@@ -1,0 +1,40 @@
+<!--[if !IE]>start pagination<![endif]-->
+<div class="pagination_wrapper">
+<span class="pagination_top"></span>
+<div class="pagination_middle">
+<div class="pagination">
+	<span class="page_no"><?=$this->translate("Page");?> <?= $this->current; ?> <?=$this->translate("of");?> <?= $this->last; ?> : 
+	<?=$this->translate("Element");?> <?php echo $this->firstItemNumber; ?> <?=$this->translate("to");?> <?php echo $this->lastItemNumber; ?> <?=$this->translate("of");?> <?php echo $this->totalItemCount; ?></span>
+	
+	<ul class="pag_list">
+		<?php if (isset($this->previous)): ?>
+			<li><a href="<?= $this->url(array('page' => $this->first)); ?>" class="pag_nav"><span><span><?=$this->translate("Start");?></span></span></a> </li>
+		
+		<li><a href="<?= $this->url(array('page' => $this->previous)); ?>" class="pag_nav"><span><span><?=$this->translate("Previous");?></span></span></a> </li>
+		<?php endif; ?>
+		<!-- Numbered page links -->
+		
+		<?php if (!isset($this->pagesInRange[1])): ?>
+        	<li>[...]</li>
+		<?php endif; ?>
+		
+        <?php foreach ($this->pagesInRange as $page): ?>
+            <?php if ($page != $this->current): ?>
+                <li><a href="<?= $this->url(array('page' => $page)); ?>"><?= $page; ?></a></li>
+            <?php else: ?>
+            	<li><a href="<?= $this->url(array('page' => $page)); ?>" class="current_page"><span><span><?= $page; ?></span></span></a></li>
+        	<?php endif; ?>
+        <?php endforeach; ?>
+        <?php if ($this->last>$page): ?>
+        	<li>[...]</li>
+		<?php endif; ?>									
+		<?php if (isset($this->next)): ?>
+		<li><a href="<?= $this->url(array('page' => $this->next)); ?>" class="pag_nav"><span><span><?=$this->translate("Next");?></span></span></a> </li>
+		<li><a href="<?= $this->url(array('page' => $this->last)); ?>" class="pag_nav"><span><span><?=$this->translate("End");?></span></span></a> </li>
+		<?php endif; ?>
+	</ul>
+</div>
+</div>
+<span class="pagination_bottom"></span>
+</div>
+<!--[if !IE]>end pagination<![endif]-->

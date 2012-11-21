@@ -1,0 +1,471 @@
+
+
+
+
+#dashboard_lists {
+	width: 100%;
+	overflow: hidden;
+	padding: 15px 0 0;
+}
+
+#dashboard_list_inner {
+	width: 1000px;
+	float: left;
+}
+
+#dashboard_list_inner1 {
+	position: relative;
+	float: left;
+	width: 700px;
+	float: left;
+}
+
+#dashboard_list_inner2 {
+	position: relative;
+	float: left;
+	width: 200px;
+	float: left;
+}
+
+#dashboard_list_inner3 {
+	position: relative;
+	float: left;
+	width: 500px;
+	float: left;
+}
+
+#dashboard_list_inner4 {
+	position: relative;
+	float: left;
+	width: 400px;
+	float: left;
+}
+
+#dashboard_lists dl {
+	float: left;
+	width: 230px;
+	height: 220px;
+	margin: 0;
+	padding: 0;
+	
+}
+
+#dashboard_lists dd {
+	background:url(layout/dashboard_dl.gif) no-repeat;
+	padding: 0 0 0 14px;
+	margin: 0 0 0 18px;
+}
+
+#dashboard_lists dt {
+	font-size: 18px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/dashboard_dt.gif) no-repeat;
+	padding: 0 0 0 40px;
+	margin: 0;
+}
+
+dt1 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/PROGRAMACION.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt2 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/BASESDEDATOS.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt3 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/OFICINATECNICA.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt4 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/JEFEDEPRODUCCION.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt5 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/PRODUCCION.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt6 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/BASESDEDATOS.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt7 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/CLIENTE.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt8 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/PRESUPUESTOS.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt9 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/COMPRAS.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt10 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/RECURSOSHUMANOS.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt11 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/CALIDAD.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt12 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/CONTABILIDAD.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt13 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/ALMACENENTRADA.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt14 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/PREIMPRESION.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt15 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/PANTALLAS.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt16 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/TINTAS.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt17 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/IMPRESION.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt18{
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/ACABADOS.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt19{
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/ALMACENSALIDA.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt20{
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/ADMINISTRACIONPAL.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt21{
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/PRODUCCIONPAL.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+dt22{
+	font-size: 45px;
+	font-weight: bold;
+	color: #001444;
+	line-height: 36px;
+	background:url(layout/TALLERPAL.png) no-repeat;
+	padding: 0 0 0 50px;
+	margin: 0;
+}
+
+
+#dashboard_lists a:link, #dashboard_lists a:visited, #dashboard_lists a:hover, #dashboard_lists a:active {
+	color: #718bbc;
+	font-size: 13px;
+	background:url(layout/dashboard_lk.gif) no-repeat left center;
+	display: block;
+	padding: 0 0 0 9px;
+	line-height: 20px;
+	display: block;
+	display: inline-block;
+	
+}
+/* end main info */
+
+/* start sec info */
+#sec_info {
+	padding: 0 23px 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin-top: -20px;
+}
+
+#latest_orders {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.title_wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.view_all_orders:link, .view_all_orders:visited, .view_all_orders:hover, .view_all_orders:active {
+	display: block;
+	float: right;
+	background:url(layout/loupe.gif) no-repeat left center;
+	padding: 0 0 0 18px;
+	color: #718bbc;
+	line-height: 15px;
+	margin: 25px 0 0 0;
+	position: relative;
+	top: 0;
+	right: 9px;
+}
+
+.table_wrapper {
+	width: 906px;
+	margin: 0 auto;
+	background:url(layout/table_top.gif) no-repeat;
+	padding: 2px 0 0;
+}
+
+.table_wrapper_inner {
+	border: solid #dbdbdb;
+	border-width:  0 0 0 1px;
+}
+
+.table_wrapper td, .table_wrapper th {
+	border: solid #dbdbdb;
+	border-width: 0 1px 1px 0;
+}
+
+.table_wrapper th {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.table_wrapper th a:link, .table_wrapper th a:visited, .table_wrapper th a:hover, .table_wrapper th a:active {
+	color: #1f476f;
+	display: block;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding: 0 16px 0 0;
+}
+
+.approved {
+	display: block;
+	display: inline-block;
+	padding: 0 20px 0 0;
+	background:url(layout/approved.gif) no-repeat right center;
+}
+
+.pending {
+	display: block;
+	display: inline-block;
+	padding: 0 20px 0 0;
+	background:url(layout/pending.gif) no-repeat right center;
+	color: #b86464;
+}
+
+.asc {
+	background-image:url(layout/asc.gif);
+}
+
+.desc {
+	background-image:url(layout/desc.gif);
+}
+
+.table_wrapper td , .table_wrapper th {
+	text-align: left;
+	padding: 0 12px;
+	line-height: 26px;
+}
+
+.table_wrapper td {
+	background: #fefefe url(layout/td_bg1.gif) repeat-x;
+}
+
+.table_wrapper tr.second td {
+	background: #f2f2f2 url(layout/td_bg2.gif) repeat-x;
+}
+
+.actions {
+	width: 96px;
+	overflow: hidden;
+}
+
+.actions ul {
+	margin: 0;
+	padding: 0;
+	width: 120px;
+}
+
+
+.actions ul li {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0 11px 0 0;
+	list-style: none;
+}
+
+.actions ul a:link, .actions ul a:visited, .actions ul a:hover, .actions ul a:active {
+	display: block;
+	width: 14px;
+	height: 13px;
+	text-indent: -3000px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+.action1 {
+	background-image:url(layout/action1.gif);
+}
+.action2 {
+	background-image:url(layout/action2.gif);
+}
+.action3 {
+	background-image:url(layout/action3.gif);
+}
+.action4 {
+	background-image:url(layout/action4.gif);
+}
+
+/* end sec info */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

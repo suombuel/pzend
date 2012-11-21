@@ -1,0 +1,17 @@
+<p><?=$this->translate("Configuration checked");?>!!!<br/><br/></p>
+<?php foreach ($this->out as $module => $value) : ?>
+	<h2><?php echo ucfirst($module); ?></h2>
+	<?php foreach ($value as $key => $access) : ?> 
+	<div>
+		<?php echo ucfirst($key); ?>  
+		<?=$this->translate("with");?> <?=$access['code']?'<font color="green">'.$access['message'].'</font>':'<font color="red">'.$access['message'].'</font>' ?>
+	</div> 
+	<?php endforeach; ?><br/><br/>
+<?php endforeach; ?>
+
+<a href="http://validator.w3.org/check?uri=referer">
+	<img src="<?php echo $this->baseUrl() ?>/assets/valid-xhtml10.png" alt="Valid XHTML 1.0 Transitional" height="41"  class="top" />
+</a>&nbsp;&nbsp;&nbsp;
+<a href="http://framework.zend.com/" target="_blank">
+	<img src="<?php echo $this->baseUrl() ?>/assets/PoweredBy_ZF_4LightBG.png" alt="Powered By ZendFramewrok" height="41" class="top" />
+</a>

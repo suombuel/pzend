@@ -1,0 +1,13 @@
+<div class="article">
+<h1><a href="<?php echo $this->entryUrl(array('id'=>$this->id,'title'=>$this->title)) ?>"><?php echo $this->escape($this->title) ?></a></h1>
+<a href="<?php echo $this->entryUrl(array('id'=>$this->id,'title'=>$this->title)) ?>"></a>
+<?php echo $this->body ?>
+<?php if(!empty($this->has_extended)): ?>
+    <a id="extended"></a>
+    <?php echo $this->extended_body ?>
+<?php endif; ?>
+<p class="date"><?php echo $this->escape($this->formatDbDate($this->date)) ?></p>
+<p class="post_details"><a href="<?php echo $this->entryUrl(array('id'=>$this->id,'title'=>$this->title)) ?>" class="permalink">Article</a> posted by <a href="#"><?php echo $this->escape($this->author) ?></a> in <a href="#" title="General #1">General #1</a>, <a href="#" title="General #2">General #2</a>&nbsp;&nbsp;&nbsp;
+<a href="<?php echo $this->entryUrl(array('id'=>$this->id,'title'=>$this->title)) ?>#comments"><strong>Comments (<?php echo $this->escape($this->comment_count) ?>)</strong></a>
+</p>
+</div><!-- end .article -->

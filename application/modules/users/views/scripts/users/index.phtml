@@ -1,0 +1,45 @@
+<br/>
+<h2><?=$this->translate("Usuarios");?></h2>
+<a href='<?= $this->url(
+			array('module' => 'users',
+				  'controller' => 'users',
+				  'action'=>'add'), 'default', true) ?>'>insert</a>
+<table border=1>
+	<tr>
+		<th>id</th>
+		<th>name</th>
+		<th>email</th>
+		<th>dateofb</th>
+		<th>status</th>
+		<th>options</th>
+	<tr>
+	<?php foreach ($this->entries as $key => $value): ?>
+	<tr>
+		<td><?=$value["uid"]?></td>
+		<td><?=$value["user_name"]?></td>
+		<td><?=$value["email"]?></td>
+		<td><?=$value["date"]?></td>
+		<td><?=$value["status"]?></td>
+		<td><a href='<?= $this->url(
+			array('module' => 'users',
+				  'controller' => 'users',
+				  'action'=>'editpassword',
+				  'uid'=>$value["uid"]), 'default', true) ?>'>edit password</a>
+				  <a href='<?= $this->url(
+			array('module' => 'users',
+				  'controller' => 'users',
+				  'action'=>'edit',
+				  'uid'=>$value["uid"]), 'default', true) ?>
+				  '>update</a> 
+			<a href='<?= $this->url(
+			array('module' => 'users',
+				  'controller' => 'users',
+				  'action'=>'delete',
+				  'uid'=>$value["uid"]), 'default', true) ?>'>delete</a></td>
+	</tr>
+	<?php endforeach;?>
+</table>
+
+
+
+
